@@ -1,0 +1,1835 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0; }
+
+ul, li {
+  list-style: none; }
+
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%; }
+
+.top {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  overflow: hidden; }
+  .top > div {
+    float: left; }
+  .top .topSon1 {
+    width: 6.33%;
+    height: 50%; }
+    .top .topSon1 .topP {
+      line-height: 40px;
+      text-align: center;
+      font-size: 3rem;
+      color: black;
+      padding-bottom: 10px;
+      border-bottom: 4px solid #4178be; }
+  .top .topSon2 {
+    width: 72.8%;
+    height: 100%;
+    overflow: hidden; }
+    .top .topSon2 li {
+      float: left;
+      width: auto;
+      height: 100%;
+      margin: 15px 12.5px;
+      border-bottom: 4px solid #4178be;
+      padding-bottom: 24px; }
+      .top .topSon2 li:nth-child(5) {
+        height: 18px; }
+      .top .topSon2 li:nth-child(6) {
+        height: 18px; }
+      .top .topSon2 li span {
+        float: right; }
+    .top .topSon2 li:last-child {
+      float: right;
+      width: 100px;
+      height: 30px;
+      margin: 10px 10px;
+      border: 1px solid #4178be;
+      line-height: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #4178be;
+      padding-bottom: 0px; }
+  .top .topSon3 {
+    width: 13%;
+    height: 100%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray; }
+    .top .topSon3 input {
+      width: 70%;
+      height: 100%;
+      float: left;
+      border: none;
+      outline: none; }
+    .top .topSon3 .iconfont {
+      width: 30%;
+      height: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-size: 2rem;
+      color: none;
+      float: right; }
+  .top .shadow {
+    box-shadow: 0 0 4px #4178be; }
+  .top .topSon4 {
+    width: 7.27%;
+    height: 100%;
+    overflow: hidden; }
+    .top .topSon4 p {
+      width: 40%;
+      height: 80%;
+      margin: 3px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 2.5rem;
+      color: none;
+      float: left;
+      border-bottom: 4px solid #4178be;
+      padding-bottom: 7px; }
+
+.empty {
+  height: 50px; }
+
+.Banner {
+  width: 100%;
+  height: 380px;
+  background: url(../image/banner.jpg);
+  background-size: cover;
+  position: relative; }
+  .Banner .banLeft {
+    width: 40%;
+    height: 80%;
+    float: left;
+    color: white;
+    padding-top: 40px; }
+    .Banner .banLeft p:nth-child(1) {
+      line-height: 45px;
+      text-align: left;
+      font-size: 3rem;
+      color: none;
+      margin-left: 16px; }
+    .Banner .banLeft p:nth-child(2) {
+      line-height: 15px;
+      text-align: left;
+      font-size: 1.3rem;
+      color: none;
+      margin-left: 16px;
+      margin-top: 20px; }
+    .Banner .banLeft p:nth-child(3) {
+      line-height: 15px;
+      text-align: left;
+      font-size: 1.3rem;
+      color: none;
+      margin-left: 16px;
+      margin-top: 20px; }
+      .Banner .banLeft p:nth-child(3):hover a {
+        text-decoration: underline; }
+      .Banner .banLeft p:nth-child(3) span {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 7.5px;
+        margin-right: 10px;
+        background: #fff;
+        color: #000; }
+    .Banner .banLeft p:nth-child(4) {
+      line-height: 15px;
+      text-align: left;
+      font-size: 1.3rem;
+      color: none;
+      margin-left: 16px;
+      margin-top: 20px; }
+      .Banner .banLeft p:nth-child(4):hover a {
+        text-decoration: underline; }
+      .Banner .banLeft p:nth-child(4) span {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000;
+        border-radius: 7.5px;
+        margin-right: 10px;
+        background: #fff;
+        color: #000; }
+  .Banner .banRight {
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3); }
+    .Banner .banRight > p {
+      float: left;
+      width: 20%;
+      height: 100%;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 60px;
+      text-align: center; }
+      .Banner .banRight > p:hover {
+        color: white; }
+
+.content1 {
+  width: 100%;
+  height: 408px; }
+  .content1 .son1:nth-child(even) {
+    background: #ecf2f2; }
+  .content1 .son1 {
+    width: 25%;
+    height: 100%;
+    float: left; }
+    .content1 .son1 > p {
+      line-height: 50px;
+      text-align: left;
+      font-size: 3rem;
+      color: black;
+      margin: 20px; }
+    .content1 .son1 .sonT1 {
+      width: 100%;
+      height: 43%; }
+      .content1 .son1 .sonT1 img {
+        width: 100%;
+        height: 100%; }
+    .content1 .son1 .sonB1 {
+      width: 100%;
+      height: 56.8%;
+      font-size: 1.5rem; }
+      .content1 .son1 .sonB1 p {
+        margin: 25px 0 0 15px; }
+      .content1 .son1 .sonB1 p:nth-child(2) {
+        font-size: 1.2rem; }
+      .content1 .son1 .sonB1 p:nth-child(3) {
+        color: #4178be; }
+        .content1 .son1 .sonB1 p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid white;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          color: white;
+          background: #4178be; }
+
+.content2 {
+  width: 100%;
+  height: 400px; }
+  .content2 .son2:nth-child(even) {
+    background: #1d3649; }
+  .content2 .son2:nth-child(odd) {
+    background: #264a60; }
+  .content2 .son2 {
+    width: 25%;
+    height: 100%;
+    float: left; }
+    .content2 .son2 > p:nth-child(1) {
+      line-height: 45px;
+      text-align: left;
+      font-size: 2.5rem;
+      color: white;
+      margin: 20px; }
+    .content2 .son2 > p:nth-child(2) {
+      width: 50%;
+      height: 40px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      line-height: 40px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      margin: 20px; }
+      .content2 .son2 > p:nth-child(2):hover {
+        background: white;
+        color: #264a60; }
+    .content2 .son2 .sonT2 {
+      width: 100%;
+      height: 40%; }
+      .content2 .son2 .sonT2 img {
+        width: 100%;
+        height: 100%; }
+    .content2 .son2 .sonB2 {
+      width: 100%;
+      height: 60%;
+      font-size: 1.5rem; }
+      .content2 .son2 .sonB2 p {
+        margin: 20px 0 0 15px;
+        color: white; }
+      .content2 .son2 .sonB2 p:nth-child(2) {
+        font-size: 1.2rem; }
+      .content2 .son2 .sonB2 p:nth-child(3) {
+        color: white; }
+        .content2 .son2 .sonB2 p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid white;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          color: black;
+          background: white; }
+
+.content3 {
+  width: 100%;
+  height: 490px; }
+  .content3 .son3:nth-child(even) {
+    background: #ecf2f2; }
+  .content3 .son3 {
+    width: 25%;
+    height: 100%;
+    float: left; }
+    .content3 .son3 > p:nth-child(1) {
+      line-height: 45px;
+      text-align: left;
+      font-size: 3.5rem;
+      color: #008571;
+      margin: 30px 0 0 20px; }
+    .content3 .son3 > p:nth-child(2) {
+      width: 50%;
+      height: 40px;
+      border: 1px solid #008571;
+      box-sizing: border-box;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #008571;
+      margin: 30px 0 0 20px; }
+      .content3 .son3 > p:nth-child(2):hover {
+        background: #008571;
+        color: white; }
+    .content3 .son3 > p:nth-child(3) {
+      width: 55%;
+      height: 40px;
+      border: 1px solid #008571;
+      box-sizing: border-box;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #008571;
+      margin: 20px; }
+      .content3 .son3 > p:nth-child(3):hover {
+        background: #008571;
+        color: white; }
+  .content3 .sonT3 {
+    width: 100%;
+    height: 40%;
+    margin-top: 30px; }
+    .content3 .sonT3 img {
+      width: 100%;
+      height: 100%; }
+  .content3 .sonB3 {
+    width: 100%;
+    height: 59.9%;
+    font-size: 2.5rem; }
+    .content3 .sonB3 p {
+      margin: 25px 0 0 15px;
+      color: black; }
+    .content3 .sonB3 p:nth-child(2) {
+      font-size: 1.5rem; }
+    .content3 .sonB3 p:nth-child(3) {
+      font-size: 1rem;
+      color: #4178be; }
+      .content3 .sonB3 p:nth-child(3) span {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        border-radius: 7.5px;
+        margin-right: 10px;
+        background: #4178be;
+        color: white; }
+
+.content4 {
+  width: 100%;
+  height: 407px; }
+  .content4 .son4 {
+    width: 25%;
+    height: 100%;
+    background: #4178be;
+    color: white;
+    float: left; }
+    .content4 .son4 > p {
+      width: 100%;
+      height: 25%;
+      margin: 35px 0 10px 20px; }
+    .content4 .son4 span {
+      font-size: 2.5rem; }
+      .content4 .son4 span:hover a {
+        text-decoration: underline; }
+  .content4 .son4:first-child p {
+    width: 80%;
+    height: 50%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 80px 0 0 20px; }
+
+.content5 {
+  width: 100%;
+  height: 485px;
+  background: url(../image/story.jpg);
+  background-size: cover; }
+  .content5 .son5 {
+    width: 40%;
+    height: 80%;
+    padding-top: 50px; }
+    .content5 .son5 p:nth-child(1) {
+      margin: 20px;
+      line-height: 30px;
+      text-align: left;
+      font-size: 18px;
+      color: white; }
+    .content5 .son5 p:nth-child(2) {
+      margin: 20px;
+      line-height: 40px;
+      text-align: left;
+      font-size: 28px;
+      color: white; }
+    .content5 .son5 p:nth-child(3) {
+      margin: 20px;
+      line-height: 30px;
+      text-align: left;
+      font-size: 15px;
+      color: white; }
+    .content5 .son5 p:nth-child(4) {
+      margin: 20px;
+      width: 150px;
+      height: 40px;
+      background: #777677;
+      line-height: 40px;
+      text-align: center;
+      font-size: 2rem;
+      color: white; }
+      .content5 .son5 p:nth-child(4):hover {
+        background: #000; }
+
+.content6 {
+  width: 100%;
+  height: 342px; }
+  .content6 .son6 {
+    width: 25%;
+    height: 100%;
+    background: #777677;
+    float: left;
+    color: white; }
+    .content6 .son6 span {
+      font-size: 2.5rem; }
+      .content6 .son6 span:hover a {
+        text-decoration: underline; }
+  .content6 .son6 > p {
+    width: 100%;
+    height: 40%;
+    margin-top: 40px;
+    font-size: 1.5rem; }
+  .content6 .son6:first-child p {
+    width: 80%;
+    height: 40%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 80px 0 0 20px; }
+
+.content7 {
+  width: 100%;
+  height: 440px; }
+  .content7 .son7 {
+    width: 25%;
+    height: 100%;
+    float: left; }
+    .content7 .son7 p {
+      margin: 30px 0 0 20px; }
+      .content7 .son7 p:hover a {
+        text-decoration: underline;
+        color: blue; }
+    .content7 .son7 select {
+      margin: 30px 0 0 20px; }
+
+.footer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid gray;
+  font-size: 2rem;
+  line-height: 50px;
+  text-align: left;
+  position: relative; }
+  .footer > p {
+    float: left;
+    margin-left: 30px; }
+  .footer .footRight {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3); }
+    .footer .footRight > p {
+      width: 20%;
+      height: 100%;
+      float: left;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 30px;
+      text-align: center; }
+      .footer .footRight > p:hover {
+        color: white; }
+
+.hideTop {
+  width: 100%;
+  height: 500px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  display: none; }
+  .hideTop .hideTopL {
+    width: 30%;
+    height: 100%;
+    background: #ecf2f2;
+    float: left; }
+    .hideTop .hideTopL p {
+      width: 80%;
+      height: 40px;
+      margin: 1px;
+      line-height: 40px;
+      text-align: left;
+      font-size: 2rem;
+      color: black;
+      margin-left: 40px; }
+    .hideTop .hideTopL .bg {
+      background: #4178be; }
+  .hideTop .hideTopR {
+    width: 70%;
+    height: 100%;
+    background: white;
+    float: right; }
+    .hideTop .hideTopR ul {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+      .hideTop .hideTopR ul li:nth-child(1) {
+        width: 100%;
+        height: 100%; }
+      .hideTop .hideTopR ul li:nth-child(2) {
+        width: 100%;
+        height: 100%; }
+      .hideTop .hideTopR ul li:nth-child(3) {
+        width: 100%;
+        height: 100%; }
+      .hideTop .hideTopR ul li:nth-child(4) {
+        width: 100%;
+        height: 100%; }
+      .hideTop .hideTopR ul li:nth-child(5) {
+        width: 100%;
+        height: 100%; }
+      .hideTop .hideTopR ul li {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .hideTop .hideTopR ul li .liLeft {
+          float: left;
+          width: 40%;
+          height: 100%; }
+          .hideTop .hideTopR ul li .liLeft p {
+            margin: 10px 0 0 20px; }
+          .hideTop .hideTopR ul li .liLeft p:nth-child(1) {
+            font-size: 30px; }
+        .hideTop .hideTopR ul li .liRight {
+          padding-top: 50px;
+          float: right;
+          width: 60%;
+          height: 100%; }
+          .hideTop .hideTopR ul li .liRight p {
+            margin: 10px 0 0 20px; }
+          .hideTop .hideTopR ul li .liRight .liPic {
+            width: 60%;
+            height: 30%;
+            margin: 10px 0 0 20px; }
+            .hideTop .hideTopR ul li .liRight .liPic img {
+              width: 100%;
+              height: 100%; }
+
+.layout {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .layout .hideSide {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #fff; }
+    .layout .hideSide > div {
+      width: 100%;
+      height: auto;
+      line-height: 30px;
+      text-align: left;
+      font-size: 2rem;
+      color: black;
+      margin: 0px 10px 10px 0px; }
+      .layout .hideSide > div:first-child {
+        border-bottom: 1px solid gray;
+        box-sizing: border-box; }
+      .layout .hideSide > div ul {
+        width: 90%;
+        height: auto; }
+        .layout .hideSide > div ul li {
+          width: auto;
+          height: 30px;
+          line-height: 30px;
+          text-align: left;
+          font-size: 1.5rem;
+          color: black;
+          margin: 10px 10px 10px 40px;
+          display: block; }
+          .layout .hideSide > div ul li:hover a {
+            text-decoration: underline; }
+      .layout .hideSide > div b {
+        padding-left: 30px;
+        display: block;
+        width: 90%;
+        height: 40px; }
+        .layout .hideSide > div b .first {
+          float: right;
+          margin-right: 20px;
+          font-size: 2rem; }
+        .layout .hideSide > div b:hover {
+          background: #008571; }
+        .layout .hideSide > div b .hideSpan {
+          float: right;
+          color: white;
+          font-size: 2rem;
+          width: 10%;
+          height: 30px; }
+        .layout .hideSide > div b .hideSpan:last-child {
+          display: none; }
+
+@media screen and (max-width: 1196px) {
+  .top {
+    width: 100%;
+    height: 50px;
+    overflow: hidden; }
+    .top > div {
+      float: left; }
+    .top .topSon1 {
+      width: 6.33%;
+      height: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-size: 3rem;
+      color: black;
+      overflow: hidden; }
+      .top .topSon1 b {
+        padding-bottom: 17px;
+        border-bottom: 4px solid #4178be; }
+    .top .topSon2 {
+      width: 72.8%;
+      height: 100%;
+      overflow: hidden; }
+      .top .topSon2 li {
+        display: none;
+        float: left;
+        width: auto;
+        height: 100%;
+        margin: 15px 12.5px;
+        border-bottom: 4px solid #4178be;
+        padding-bottom: 24px; }
+        .top .topSon2 li span {
+          float: right; }
+      .top .topSon2 li:last-child {
+        display: block;
+        float: right;
+        width: 100px;
+        height: 30px;
+        margin: 10px 10px;
+        border: 1px solid #4178be;
+        line-height: 30px;
+        text-align: center;
+        font-size: 1rem;
+        color: #4178be;
+        padding-bottom: 0px; }
+    .top .topSon3 {
+      width: 13%;
+      height: 100%;
+      border-left: 1px solid gray;
+      border-right: 1px solid gray; }
+      .top .topSon3 input {
+        width: 70%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none; }
+      .top .topSon3 .iconfont {
+        width: 30%;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 2rem;
+        color: none;
+        float: right; }
+    .top .shadow {
+      box-shadow: 0 0 4px #4178be; }
+    .top .topSon4 {
+      width: 7.27%;
+      height: 100%;
+      overflow: hidden; }
+      .top .topSon4 p {
+        width: 40%;
+        height: 80%;
+        margin: 3px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        color: none;
+        float: left;
+        border-bottom: 4px solid #4178be;
+        padding-bottom: 7px; }
+
+  .Banner {
+    width: 100%;
+    height: 380px;
+    background: url(../image/banner.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; }
+    .Banner .banLeft {
+      width: 40%;
+      height: 80%;
+      float: left;
+      color: white;
+      padding-top: 40px; }
+      .Banner .banLeft p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 4rem;
+        color: none;
+        margin-left: 16px; }
+      .Banner .banLeft p:nth-child(2) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+      .Banner .banLeft p:nth-child(3) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+        .Banner .banLeft p:nth-child(3):hover a {
+          text-decoration: underline; }
+        .Banner .banLeft p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #fff;
+          color: #000; }
+      .Banner .banLeft p:nth-child(4) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+        .Banner .banLeft p:nth-child(4):hover a {
+          text-decoration: underline; }
+        .Banner .banLeft p:nth-child(4) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #000;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #fff;
+          color: #000; }
+    .Banner .banRight {
+      width: 20%;
+      height: 15%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3); }
+      .Banner .banRight > p {
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 60px;
+        text-align: center; }
+        .Banner .banRight > p:hover {
+          color: white; }
+
+  .content1 {
+    width: 100%;
+    height: 408px; }
+    .content1 .son1:nth-child(even) {
+      background: #ecf2f2; }
+    .content1 .son1 {
+      width: 50%;
+      height: 100%;
+      float: left; }
+      .content1 .son1 > p {
+        line-height: 50px;
+        text-align: left;
+        font-size: 3rem;
+        color: black;
+        margin: 20px; }
+      .content1 .son1 .sonT1 {
+        width: 100%;
+        height: 43%; }
+        .content1 .son1 .sonT1 img {
+          width: 100%;
+          height: 100%; }
+      .content1 .son1 .sonB1 {
+        width: 100%;
+        height: 56.8%;
+        font-size: 1.5rem; }
+        .content1 .son1 .sonB1 p {
+          margin: 25px 0 0 15px; }
+        .content1 .son1 .sonB1 p:nth-child(2) {
+          font-size: 1.2rem; }
+        .content1 .son1 .sonB1 p:nth-child(3) {
+          color: #4178be; }
+          .content1 .son1 .sonB1 p:nth-child(3) span {
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            border-radius: 7.5px;
+            margin-right: 10px;
+            color: white;
+            background: #4178be; }
+
+  .content2 {
+    width: 100%;
+    height: 400px;
+    clear: both; }
+    .content2 .son2:nth-child(even) {
+      background: #1d3649; }
+    .content2 .son2:nth-child(odd) {
+      background: #264a60; }
+    .content2 .son2 {
+      width: 50%;
+      height: 100%;
+      float: left; }
+      .content2 .son2 > p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 2.5rem;
+        color: white;
+        margin: 20px; }
+      .content2 .son2 > p:nth-child(2) {
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        margin: 20px; }
+        .content2 .son2 > p:nth-child(2):hover {
+          background: white;
+          color: #264a60; }
+      .content2 .son2 .sonT2 {
+        width: 100%;
+        height: 40%; }
+        .content2 .son2 .sonT2 img {
+          width: 100%;
+          height: 100%; }
+      .content2 .son2 .sonB2 {
+        width: 100%;
+        height: 60%;
+        font-size: 1.5rem; }
+        .content2 .son2 .sonB2 p {
+          margin: 20px 0 0 15px;
+          color: white; }
+        .content2 .son2 .sonB2 p:nth-child(2) {
+          font-size: 1.2rem; }
+        .content2 .son2 .sonB2 p:nth-child(3) {
+          color: white; }
+          .content2 .son2 .sonB2 p:nth-child(3) span {
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            border-radius: 7.5px;
+            margin-right: 10px;
+            color: black;
+            background: white; }
+
+  .content3 {
+    clear: both;
+    width: 100%;
+    height: 490px; }
+    .content3 .son3:nth-child(even) {
+      background: #ecf2f2; }
+    .content3 .son3 {
+      width: 50%;
+      height: 100%;
+      float: left; }
+      .content3 .son3 > p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 3.5rem;
+        color: #008571;
+        margin: 30px 0 0 20px; }
+      .content3 .son3 > p:nth-child(2) {
+        width: 50%;
+        height: 40px;
+        border: 1px solid #008571;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #008571;
+        margin: 30px 0 0 20px; }
+        .content3 .son3 > p:nth-child(2):hover {
+          background: #008571;
+          color: white; }
+      .content3 .son3 > p:nth-child(3) {
+        width: 55%;
+        height: 40px;
+        border: 1px solid #008571;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #008571;
+        margin: 20px; }
+        .content3 .son3 > p:nth-child(3):hover {
+          background: #008571;
+          color: white; }
+    .content3 .sonT3 {
+      width: 100%;
+      height: 40%;
+      margin-top: 30px; }
+      .content3 .sonT3 img {
+        width: 100%;
+        height: 100%; }
+    .content3 .sonB3 {
+      width: 100%;
+      height: 59.9%;
+      font-size: 2.5rem; }
+      .content3 .sonB3 p {
+        margin: 25px 0 0 15px;
+        color: black; }
+      .content3 .sonB3 p:nth-child(2) {
+        font-size: 1.5rem; }
+      .content3 .sonB3 p:nth-child(3) {
+        font-size: 1rem;
+        color: #4178be; }
+        .content3 .sonB3 p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #fff;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #4178be;
+          color: white; }
+
+  .content4 {
+    width: 100%;
+    height: 407px; }
+    .content4 .son4 {
+      width: 50%;
+      height: 100%;
+      background: #4178be;
+      color: white;
+      float: left; }
+      .content4 .son4 > p {
+        width: 100%;
+        height: 25%;
+        margin: 35px 0 10px 20px; }
+      .content4 .son4 span {
+        font-size: 2.5rem; }
+        .content4 .son4 span:hover a {
+          text-decoration: underline; }
+    .content4 .son4:first-child p {
+      width: 80%;
+      height: 50%;
+      line-height: 45px;
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      margin: 80px 0 0 20px; }
+
+  .content5 {
+    width: 100%;
+    height: 485px;
+    background: url(../image/story.jpg);
+    background-size: cover;
+    clear: both; }
+    .content5 .son5 {
+      width: 40%;
+      height: 80%;
+      padding-top: 50px; }
+      .content5 .son5 p:nth-child(1) {
+        margin: 20px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 18px;
+        color: white; }
+      .content5 .son5 p:nth-child(2) {
+        margin: 20px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 28px;
+        color: white; }
+      .content5 .son5 p:nth-child(3) {
+        margin: 20px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 15px;
+        color: white; }
+      .content5 .son5 p:nth-child(4) {
+        margin: 20px;
+        width: 150px;
+        height: 40px;
+        background: #777677;
+        line-height: 40px;
+        text-align: center;
+        font-size: 2rem;
+        color: white; }
+        .content5 .son5 p:nth-child(4):hover {
+          background: #000; }
+
+  .content6 {
+    width: 100%;
+    height: 342px; }
+    .content6 .son6 {
+      width: 50%;
+      height: 100%;
+      background: #777677;
+      float: left;
+      color: white; }
+      .content6 .son6 span {
+        font-size: 2.5rem; }
+        .content6 .son6 span:hover a {
+          text-decoration: underline; }
+    .content6 .son6 > p {
+      width: 100%;
+      height: 40%;
+      margin-top: 40px;
+      font-size: 1.5rem; }
+    .content6 .son6:first-child p {
+      width: 80%;
+      height: 40%;
+      line-height: 45px;
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+      margin: 80px 0 0 20px; }
+
+  .content7 {
+    width: 100%;
+    height: 440px; }
+    .content7 .son7 {
+      width: 25%;
+      height: 100%;
+      float: left; }
+      .content7 .son7 p {
+        margin: 30px 0 0 20px; }
+        .content7 .son7 p:hover a {
+          text-decoration: underline;
+          color: blue; }
+      .content7 .son7 select {
+        margin: 30px 0 0 20px; }
+
+  .footer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid gray;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: left;
+    position: relative;
+    overflow: hidden; }
+    .footer > p {
+      float: left;
+      margin-left: 30px; }
+    .footer .footRight {
+      width: 20%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3); }
+      .footer .footRight > p {
+        width: 20%;
+        height: 100%;
+        float: left;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 30px;
+        text-align: center; }
+        .footer .footRight > p:hover {
+          color: white; }
+
+  .hideTop {
+    width: 100%;
+    height: 500px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    display: none; }
+    .hideTop .hideTopL {
+      width: 30%;
+      height: 100%;
+      background: #ecf2f2;
+      float: left; }
+      .hideTop .hideTopL p {
+        width: 80%;
+        height: 40px;
+        margin: 1px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 2rem;
+        color: black;
+        margin-left: 40px; }
+      .hideTop .hideTopL .bg {
+        background: #4178be; }
+    .hideTop .hideTopR {
+      width: 70%;
+      height: 100%;
+      background: white;
+      float: right; }
+      .hideTop .hideTopR ul {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(1) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(2) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(3) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(4) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(5) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li {
+          position: absolute;
+          top: 0;
+          left: 0; }
+          .hideTop .hideTopR ul li .liLeft {
+            float: left;
+            width: 40%;
+            height: 100%; }
+            .hideTop .hideTopR ul li .liLeft p {
+              margin: 10px 0 0 20px; }
+            .hideTop .hideTopR ul li .liLeft p:nth-child(1) {
+              font-size: 30px; }
+          .hideTop .hideTopR ul li .liRight {
+            padding-top: 50px;
+            float: right;
+            width: 60%;
+            height: 100%; }
+            .hideTop .hideTopR ul li .liRight p {
+              margin: 10px 0 0 20px; }
+            .hideTop .hideTopR ul li .liRight .liPic {
+              width: 60%;
+              height: 30%;
+              margin: 10px 0 0 20px; }
+              .hideTop .hideTopR ul li .liRight .liPic img {
+                width: 100%;
+                height: 100%; }
+
+  .layout {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .layout .hideSide {
+      position: absolute;
+      right: -200px;
+      top: 0;
+      height: 100%;
+      width: 300px;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      overflow-y: auto;
+      background: #fff; }
+      .layout .hideSide > div {
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+        text-align: left;
+        font-size: 2rem;
+        color: black;
+        margin: 0px 10px 10px 0px; }
+        .layout .hideSide > div:first-child {
+          border-bottom: 1px solid gray;
+          box-sizing: border-box; }
+        .layout .hideSide > div ul {
+          width: 90%;
+          height: auto; }
+          .layout .hideSide > div ul li {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            font-size: 1.5rem;
+            color: black;
+            margin: 10px 10px 10px 40px;
+            display: block; }
+            .layout .hideSide > div ul li:hover a {
+              text-decoration: underline; }
+        .layout .hideSide > div b {
+          padding-left: 30px;
+          display: block;
+          width: 90%;
+          height: 40px; }
+          .layout .hideSide > div b .first {
+            float: right;
+            margin-right: 20px;
+            font-size: 2rem; }
+          .layout .hideSide > div b:hover {
+            background: #008571; }
+          .layout .hideSide > div b .hideSpan {
+            float: right;
+            color: white;
+            font-size: 2rem;
+            width: 10%;
+            height: 30px; }
+          .layout .hideSide > div b .hideSpan:last-child {
+            display: none; } }
+@media screen and (max-width: 580px) {
+  .top {
+    width: 100%;
+    height: 50px; }
+    .top > div {
+      float: left; }
+    .top .topSon1 {
+      width: 12%;
+      height: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-size: 3rem;
+      color: black;
+      overflow: hidden; }
+      .top .topSon1 b {
+        padding-bottom: 17px;
+        border-bottom: 4px solid #4178be; }
+    .top .topSon2 {
+      width: 60%;
+      height: 100%; }
+      .top .topSon2 li {
+        display: none;
+        float: left;
+        width: auto;
+        height: 100%;
+        margin: 0px 12.5px;
+        border-bottom: 4px solid #4178be;
+        padding-bottom: 24px; }
+        .top .topSon2 li span {
+          float: right; }
+      .top .topSon2 li:last-child {
+        display: block;
+        float: right;
+        width: 100px;
+        height: 30px;
+        margin: 10px 10px;
+        border: 1px solid #4178be;
+        line-height: 30px;
+        text-align: center;
+        font-size: 1rem;
+        color: #4178be;
+        padding-bottom: 0px; }
+    .top .topSon3 {
+      width: 13%;
+      height: 100%;
+      border-left: 1px solid gray;
+      border-right: 1px solid gray; }
+      .top .topSon3 input {
+        width: 70%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none; }
+      .top .topSon3 .iconfont {
+        width: 30%;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 2rem;
+        color: none;
+        float: right; }
+    .top .shadow {
+      box-shadow: 0 0 4px #4178be; }
+    .top .topSon4 {
+      width: 14%;
+      height: 100%; }
+      .top .topSon4 p {
+        width: 40%;
+        height: 80%;
+        margin: 1px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        color: none;
+        float: left;
+        border-bottom: 4px solid #4178be;
+        padding-bottom: 7px; }
+
+  .Banner {
+    width: 100%;
+    height: 380px;
+    background: url(../image/banner.jpg);
+    background-size: cover;
+    position: relative;
+    clear: both; }
+    .Banner .banLeft {
+      width: 100%;
+      height: 80%;
+      color: white;
+      padding-top: 40px; }
+      .Banner .banLeft p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 4rem;
+        color: none;
+        margin-left: 16px; }
+      .Banner .banLeft p:nth-child(2) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+      .Banner .banLeft p:nth-child(3) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+        .Banner .banLeft p:nth-child(3):hover a {
+          text-decoration: underline; }
+        .Banner .banLeft p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #fff;
+          color: #000; }
+      .Banner .banLeft p:nth-child(4) {
+        line-height: 15px;
+        text-align: left;
+        font-size: 1.3rem;
+        color: none;
+        margin-left: 16px;
+        margin-top: 20px; }
+        .Banner .banLeft p:nth-child(4):hover a {
+          text-decoration: underline; }
+        .Banner .banLeft p:nth-child(4) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #000;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #fff;
+          color: #000; }
+    .Banner .banRight {
+      width: 100%;
+      height: 15%; }
+      .Banner .banRight > p {
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 60px;
+        text-align: center; }
+        .Banner .banRight > p:hover {
+          color: white; }
+
+  .content1 {
+    width: 100%;
+    height: 408px; }
+    .content1 .son1:nth-child(even) {
+      background: #ecf2f2; }
+    .content1 .son1 {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      .content1 .son1 > p {
+        line-height: 50px;
+        text-align: left;
+        font-size: 3rem;
+        color: black;
+        margin: 20px; }
+      .content1 .son1 .sonT1 {
+        width: 100%;
+        height: 43%; }
+        .content1 .son1 .sonT1 img {
+          width: 100%;
+          height: 100%; }
+      .content1 .son1 .sonB1 {
+        width: 100%;
+        height: 56.8%;
+        font-size: 1.5rem; }
+        .content1 .son1 .sonB1 p {
+          margin: 25px 0 0 15px; }
+        .content1 .son1 .sonB1 p:nth-child(2) {
+          font-size: 1.2rem; }
+        .content1 .son1 .sonB1 p:nth-child(3) {
+          color: #4178be; }
+          .content1 .son1 .sonB1 p:nth-child(3) span {
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            border-radius: 7.5px;
+            margin-right: 10px;
+            color: white;
+            background: #4178be; }
+
+  .content2 {
+    width: 100%;
+    height: 400px;
+    clear: both; }
+    .content2 .son2:nth-child(even) {
+      background: #1d3649; }
+    .content2 .son2:nth-child(odd) {
+      background: #264a60; }
+    .content2 .son2 {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      .content2 .son2 > p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 2.5rem;
+        color: white;
+        margin: 20px; }
+      .content2 .son2 > p:nth-child(2) {
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        margin: 20px; }
+        .content2 .son2 > p:nth-child(2):hover {
+          background: white;
+          color: #264a60; }
+      .content2 .son2 .sonT2 {
+        width: 100%;
+        height: 40%; }
+        .content2 .son2 .sonT2 img {
+          width: 100%;
+          height: 100%; }
+      .content2 .son2 .sonB2 {
+        width: 100%;
+        height: 60%;
+        font-size: 1.5rem; }
+        .content2 .son2 .sonB2 p {
+          margin: 20px 0 0 15px;
+          color: white; }
+        .content2 .son2 .sonB2 p:nth-child(2) {
+          font-size: 1.2rem; }
+        .content2 .son2 .sonB2 p:nth-child(3) {
+          color: white; }
+          .content2 .son2 .sonB2 p:nth-child(3) span {
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            border-radius: 7.5px;
+            margin-right: 10px;
+            color: black;
+            background: white; }
+
+  .content3 {
+    clear: both;
+    width: 100%;
+    height: 490px; }
+    .content3 .son3:nth-child(even) {
+      background: #ecf2f2; }
+    .content3 .son3 {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      .content3 .son3 > p:nth-child(1) {
+        line-height: 45px;
+        text-align: left;
+        font-size: 3.5rem;
+        color: #008571;
+        margin: 30px 0 0 20px; }
+      .content3 .son3 > p:nth-child(2) {
+        width: 50%;
+        height: 40px;
+        border: 1px solid #008571;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #008571;
+        margin: 30px 0 0 20px; }
+        .content3 .son3 > p:nth-child(2):hover {
+          background: #008571;
+          color: white; }
+      .content3 .son3 > p:nth-child(3) {
+        width: 55%;
+        height: 40px;
+        border: 1px solid #008571;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #008571;
+        margin: 20px; }
+        .content3 .son3 > p:nth-child(3):hover {
+          background: #008571;
+          color: white; }
+    .content3 .sonT3 {
+      width: 100%;
+      height: 40%;
+      margin-top: 30px; }
+      .content3 .sonT3 img {
+        width: 100%;
+        height: 100%; }
+    .content3 .sonB3 {
+      width: 100%;
+      height: 59.9%;
+      font-size: 2.5rem; }
+      .content3 .sonB3 p {
+        margin: 25px 0 0 15px;
+        color: black; }
+      .content3 .sonB3 p:nth-child(2) {
+        font-size: 1.5rem; }
+      .content3 .sonB3 p:nth-child(3) {
+        font-size: 1rem;
+        color: #4178be; }
+        .content3 .sonB3 p:nth-child(3) span {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #fff;
+          border-radius: 7.5px;
+          margin-right: 10px;
+          background: #4178be;
+          color: white; }
+
+  .content4 {
+    width: 100%;
+    height: 407px; }
+    .content4 .son4 {
+      width: 100%;
+      height: 100%;
+      background: #4178be;
+      color: white;
+      float: left; }
+      .content4 .son4 > p {
+        width: 100%;
+        height: 25%;
+        margin: 35px 0 10px 20px; }
+      .content4 .son4 span {
+        font-size: 2.5rem; }
+        .content4 .son4 span:hover a {
+          text-decoration: underline; }
+    .content4 .son4:first-child p {
+      width: 80%;
+      height: 50%;
+      line-height: 45px;
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      margin: 80px 0 0 20px; }
+
+  .content5 {
+    width: 100%;
+    height: 485px;
+    background: url(../image/story.jpg);
+    background-size: cover;
+    clear: both; }
+    .content5 .son5 {
+      width: 100%;
+      height: 80%;
+      padding-top: 50px; }
+      .content5 .son5 p:nth-child(1) {
+        margin: 20px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 18px;
+        color: white; }
+      .content5 .son5 p:nth-child(2) {
+        margin: 20px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 28px;
+        color: white; }
+      .content5 .son5 p:nth-child(3) {
+        margin: 20px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 15px;
+        color: white; }
+      .content5 .son5 p:nth-child(4) {
+        margin: 20px;
+        width: 150px;
+        height: 40px;
+        background: #777677;
+        line-height: 40px;
+        text-align: center;
+        font-size: 2rem;
+        color: white; }
+        .content5 .son5 p:nth-child(4):hover {
+          background: #000; }
+
+  .content6 {
+    width: 100%;
+    height: 342px; }
+    .content6 .son6 {
+      width: 100%;
+      height: 100%;
+      background: #777677;
+      float: left;
+      color: white; }
+      .content6 .son6 span {
+        font-size: 2.5rem; }
+        .content6 .son6 span:hover a {
+          text-decoration: underline; }
+    .content6 .son6 > p {
+      width: 100%;
+      height: 40%;
+      margin-top: 40px;
+      font-size: 1.5rem; }
+    .content6 .son6:first-child p {
+      width: 80%;
+      height: 40%;
+      line-height: 45px;
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+      margin: 80px 0 0 20px; }
+
+  .content7 {
+    width: 100%;
+    height: auto; }
+    .content7 .son7 {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      .content7 .son7 p {
+        margin: 30px 0 0 20px; }
+        .content7 .son7 p:hover a {
+          text-decoration: underline;
+          color: blue; }
+      .content7 .son7 select {
+        margin: 30px 0 0 20px; }
+
+  .footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid gray;
+    font-size: 1rem;
+    line-height: 50px;
+    text-align: left;
+    position: relative;
+    overflow: hidden; }
+    .footer > p {
+      float: left;
+      margin-left: 30px; }
+    .footer .footRight {
+      width: 100%;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.3); }
+      .footer .footRight > p {
+        width: 20%;
+        height: 100%;
+        float: left;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 30px;
+        text-align: center; }
+        .footer .footRight > p:hover {
+          color: white; }
+
+  .hideTop {
+    width: 100%;
+    height: 500px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    display: none; }
+    .hideTop .hideTopL {
+      width: 30%;
+      height: 100%;
+      background: #ecf2f2;
+      float: left; }
+      .hideTop .hideTopL p {
+        width: 80%;
+        height: 40px;
+        margin: 1px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 2rem;
+        color: black;
+        margin-left: 40px; }
+      .hideTop .hideTopL .bg {
+        background: #4178be; }
+    .hideTop .hideTopR {
+      width: 70%;
+      height: 100%;
+      background: white;
+      float: right; }
+      .hideTop .hideTopR ul {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(1) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(2) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(3) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(4) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li:nth-child(5) {
+          width: 100%;
+          height: 100%; }
+        .hideTop .hideTopR ul li {
+          position: absolute;
+          top: 0;
+          left: 0; }
+          .hideTop .hideTopR ul li .liLeft {
+            float: left;
+            width: 40%;
+            height: 100%; }
+            .hideTop .hideTopR ul li .liLeft p {
+              margin: 10px 0 0 20px; }
+            .hideTop .hideTopR ul li .liLeft p:nth-child(1) {
+              font-size: 30px; }
+          .hideTop .hideTopR ul li .liRight {
+            padding-top: 50px;
+            float: right;
+            width: 60%;
+            height: 100%; }
+            .hideTop .hideTopR ul li .liRight p {
+              margin: 10px 0 0 20px; }
+            .hideTop .hideTopR ul li .liRight .liPic {
+              width: 60%;
+              height: 30%;
+              margin: 10px 0 0 20px; }
+              .hideTop .hideTopR ul li .liRight .liPic img {
+                width: 100%;
+                height: 100%; }
+
+  .layout {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .layout .hideSide {
+      position: absolute;
+      right: -200px;
+      top: 0;
+      height: 100%;
+      width: 300px;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      overflow-y: auto;
+      background: #fff; }
+      .layout .hideSide > div {
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+        text-align: left;
+        font-size: 2rem;
+        color: black;
+        margin: 0px 10px 10px 0px; }
+        .layout .hideSide > div:first-child {
+          border-bottom: 1px solid gray;
+          box-sizing: border-box; }
+        .layout .hideSide > div ul {
+          width: 90%;
+          height: auto; }
+          .layout .hideSide > div ul li {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            font-size: 1.5rem;
+            color: black;
+            margin: 10px 10px 10px 40px;
+            display: block; }
+            .layout .hideSide > div ul li:hover a {
+              text-decoration: underline; }
+        .layout .hideSide > div b {
+          padding-left: 30px;
+          display: block;
+          width: 90%;
+          height: 40px; }
+          .layout .hideSide > div b .first {
+            float: right;
+            margin-right: 20px;
+            font-size: 2rem; }
+          .layout .hideSide > div b:hover {
+            background: #008571; }
+          .layout .hideSide > div b .hideSpan {
+            float: right;
+            color: white;
+            font-size: 2rem;
+            width: 10%;
+            height: 30px; }
+          .layout .hideSide > div b .hideSpan:last-child {
+            display: none; } }

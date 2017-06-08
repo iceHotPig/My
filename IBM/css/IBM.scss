@@ -1,0 +1,1797 @@
+@mixin property($num1,$num2){
+    width:$num1;
+    height:$num2;
+}
+@mixin border($num1, $value1, $value2,$value3){
+    border:$num1 $value1 $value2;
+    box-sizing:$value3;
+}
+@mixin align($num1,$value1,$num2,$value2){
+    line-height:$num1;
+    text-align:$value1;
+    font-size:$num2;
+    color:$value2;
+} 
+*{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    border:0;
+}
+ul ,li{
+    list-style: none;
+}
+html,body{
+    font-size:62.5%;
+    @include property(100%,100%);
+}
+.top{
+    @include property(100%,50px);
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index:1000;
+    background:white;
+    overflow:hidden;
+    > div{
+        float: left;
+    }
+    .topSon1{
+        @include property(6.33%,50%);
+
+        .topP{
+            @include align(40px,center,3rem,black);
+            padding-bottom:10px;
+            border-bottom:4px solid #4178be;
+        }
+    }
+    .topSon2{
+        @include property(72.8%,100%);
+        overflow:hidden;
+        li{
+            // font-size:1.8rem;
+            float:left;
+            &:nth-child(5){
+                height:18px;
+            }
+            &:nth-child(6){
+                height:18px;
+            }
+            @include property(auto,100%);
+            margin:15px 12.5px;
+            border-bottom:4px solid #4178be;
+            padding-bottom:24px;
+            span{
+              float:right;
+            }
+        }
+        li:last-child{
+            float:right;
+            @include property(100px,30px);
+            margin: 10px 10px;
+            border: 1px solid #4178be;
+            @include align(30px,center ,1.5rem,#4178be);
+            padding-bottom:0px;
+        }
+    }
+    .topSon3{
+        @include property(13%,100%);
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        input{
+            @include property(70%,100%);
+            float:left;
+            border: none;
+            outline:none;
+        }
+        .iconfont{
+            @include property(30%,100%);
+            @include align(50px,center ,2rem,none);
+            float: right;
+        }
+    }
+    .shadow{
+        box-shadow:0 0 4px #4178be;
+        }
+    .topSon4{
+        @include property(7.27%,100%);
+        overflow:hidden;
+        p{
+            @include property(40%,80%);
+            margin: 3px;
+            @include align(50px,center ,2.5rem,none);
+            float:left;
+            border-bottom:4px solid #4178be;
+            padding-bottom:7px;
+        }   
+    }
+}
+.empty{
+    height: 50px;
+}
+.Banner{
+    @include property(100%,380px);
+    background: url(../image/banner.jpg);
+    background-size:cover;
+    position: relative;
+    .banLeft{
+       @include property(40%,80%);
+       float:left;
+       color: white;
+       padding-top: 40px;
+       p:nth-child(1){
+       @include align(45px,left,3rem,none);
+       margin-left: 16px;
+        }
+        p:nth-child(2){
+            @include align(15px,left,1.3rem,none);
+            margin-left: 16px;
+            margin-top:20px;
+        }
+        p:nth-child(3){
+            @include align(15px,left,1.3rem,none);
+            margin-left: 16px;
+            margin-top:20px;
+            &:hover a{
+              text-decoration:underline;
+            }
+            span{
+                float:left;
+                @include property(15px,15px);
+                border:1px solid black;
+                border-radius:7.5px;
+                margin-right:10px;
+                background: #fff;
+                color:#000;
+            }
+        }
+        p:nth-child(4){
+            @include align(15px,left,1.3rem,none);
+            margin-left: 16px;
+            margin-top:20px;
+            &:hover a{
+              text-decoration:underline;
+            }
+            span{
+                float:left;
+                @include property(15px,15px);
+                border:1px solid #000;
+                border-radius:7.5px;
+                margin-right:10px;
+                background: #fff;
+                color:#000;
+            }
+        }
+    }
+    .banRight{
+        @include property(20%,15%);
+        position: absolute;
+        bottom:0;
+        right:0;
+        background:rgba(0,0,0,0.3);
+        &>p{
+            float:left;
+            @include property(20%,100%);
+            font-size:2rem;
+            color:rgba(255,255,255,0.5);
+            line-height:60px;
+            text-align:center;
+            &:hover{
+            color:rgba(255,255,255,1);
+            }
+        }
+    }
+}
+.content1{
+    @include property(100%,408px);
+    .son1:nth-child(even){
+        background: #ecf2f2;
+    }
+    .son1{
+        @include property(25%,100%);
+        float: left;
+        &>p{
+             @include align(50px,left,3rem,black);
+             margin:20px;
+        }
+        .sonT1{
+            @include property(100%,43%);
+            img{
+                @include property(100%,100%);
+            }
+        }
+        .sonB1{
+            @include property(100%,56.8%);
+            font-size:1.5rem;
+            p{
+                margin:25px 0 0 15px;
+
+            }
+            p:nth-child(2){
+                font-size:1.2rem;
+            }
+            p:nth-child(3){
+                color: #4178be;
+                span{
+                float:left;
+                @include property(15px,15px);
+                border:1px solid white;
+                border-radius:7.5px;
+                margin-right:10px;
+                color:white;
+                background: #4178be;
+                }
+            }
+        }
+    }
+}
+.content2{
+    @include property(100%,400px);
+    .son2:nth-child(even){
+        background: #1d3649;
+    }
+    .son2:nth-child(odd){
+        background: #264a60;
+    }
+    .son2{
+        @include property(25%,100%);
+        float: left;
+        >p:nth-child(1){
+            @include align(45px,left,2.5rem,white);
+            margin:20px;
+        }
+        &>p:nth-child(2){
+            @include property(50%,40px);
+            @include border(1px ,solid, white,border-box);
+            @include align(40px,center,15px,white);
+            margin:20px;
+            &:hover{
+              background:white;
+              color: #264a60;
+            }
+        }
+        .sonT2{
+            @include property(100%,40%);
+            img{
+                @include property(100%,100%);
+            }
+        }
+        .sonB2{
+            @include property(100%,60%);
+            font-size:1.5rem;
+            p{
+                margin:20px 0 0 15px;
+                color: white;
+            }
+            p:nth-child(2){
+                font-size:1.2rem;
+            }
+            p:nth-child(3){
+              color: white;
+                span{
+                  float:left;
+                  @include property(15px,15px);
+                  border:1px solid white;
+                  border-radius:7.5px;
+                  margin-right:10px;
+                  color:black;
+                  background: white;
+                }
+            }
+        }
+    }
+}
+.content3{
+    @include property(100%,490px);
+    .son3:nth-child(even){
+        background: #ecf2f2;
+    }
+    .son3{
+        @include property(25%,100%);
+        float: left;
+        >p:nth-child(1){
+            @include align(45px,left,3.5rem,#008571);
+            margin:30px 0 0 20px;
+        }
+        >p:nth-child(2){
+            @include property(50%,40px);
+            @include border(1px ,solid, #008571,border-box);
+            @include align(40px,center,1.5rem,#008571);
+            margin:30px 0 0 20px;
+            &:hover{
+                background:#008571;
+                color:white;
+            }
+        }
+        >p:nth-child(3){
+            @include property(55%,40px);
+            @include border(1px ,solid, #008571,border-box);
+            @include align(40px,center,1.5rem,#008571);
+            margin:20px;
+            &:hover{
+                background:#008571;
+                color:white;
+            }
+        }
+    }
+    .sonT3{
+        @include property(100%,40%);
+        margin-top:30px;
+        img{
+          @include property(100%,100%);
+        }
+    }
+    .sonB3{
+        @include property(100%,59.9%);
+        font-size:2.5rem;
+        p{
+          margin:25px 0 0 15px;
+          color: black;
+        }
+        p:nth-child(2){
+          font-size:1.5rem;
+        }
+        p:nth-child(3){
+          font-size:1rem;
+          color:#4178be;
+          span{
+            float:left;
+            @include property(15px,15px);
+            border:1px solid #fff;
+            border-radius:7.5px;
+            margin-right:10px;
+            background:#4178be;
+            color:white;
+          }
+      }
+
+    }
+}
+.content4{
+    @include property(100%,407px);
+    .son4{
+       @include property(25%,100%);
+       background: #4178be;
+       color:white;
+       float:left;
+       >p{
+        @include property(100%,25%);
+        margin: 35px 0 10px 20px;
+        }
+         span{
+            font-size:2.5rem;
+            &:hover a{
+              text-decoration: underline;
+            }
+        }
+    }
+    .son4:first-child{
+        p{
+          @include property(80%,50%);
+          @include align(45px,center,3rem,white);
+          margin:80px 0 0 20px;
+        }
+    }
+}
+.content5{
+    @include property(100%,485px);
+    background: url(../image/story.jpg);
+    background-size:cover;
+    .son5{
+        @include property(40%,80%);
+        padding-top:50px;
+        p:nth-child(1){
+          margin: 20px;
+          @include align(30px,left,18px,white);
+        }
+        p:nth-child(2){
+          margin: 20px;
+          @include align(40px,left,28px,white);
+        }
+        p:nth-child(3){
+          margin: 20px;
+          @include align(30px,left,15px,white);
+      }
+        p:nth-child(4){
+          margin: 20px;
+          @include property(150px,40px);
+          background:#777677;
+          @include align(40px,center,2rem,white);
+          &:hover{
+              background:#000;
+          }
+        }
+    }
+}
+.content6{
+    @include property(100%,342px);
+    .son6{
+        @include property(25%,100%);
+        background: #777677;
+        float:left;
+        color:white;
+        span{
+          font-size:2.5rem;
+          &:hover a{
+            text-decoration:underline;
+          }
+        }
+    }
+    .son6>p{
+        @include property(100%,40%);
+        margin-top: 40px;
+        font-size:1.5rem;
+    }
+    .son6:first-child{
+        p{
+          @include property(80%,40%);
+          @include align(45px,center,4rem,white);
+          margin:80px 0 0 20px;
+        }
+   }
+}
+.content7{
+    @include property(100%,440px);
+    .son7{
+        @include property(25%,100%);
+        float:left;
+        p{
+            margin:30px 0 0 20px;
+            &:hover a{
+              text-decoration: underline;
+              color:blue;
+            }
+        }
+        select{
+            margin:30px 0 0 20px;
+        }
+    }
+}
+.footer{
+    @include property(100%,50px);
+    border-top:1px solid gray;
+    font-size:2rem;
+    line-height:50px;
+    text-align:left;
+    position:relative;
+    >p{
+      float:left;
+      margin-left: 30px;
+    }
+    .footRight{
+        @include property(20%,50%);
+        position: absolute;
+        bottom:0;
+        right:0;
+        background:rgba(0,0,0,0.3);
+        >p{
+        @include property(20%,100%);
+        float:left;
+        font-size:2rem;
+        color:rgba(255,255,255,0.5);
+        line-height:30px;
+        text-align:center;
+        &:hover{
+        color:rgba(255,255,255,1);
+            }
+        }
+    }
+}
+.hideTop{
+    @include property(100%,500px);
+    @include border(1px ,solid, gray ,border-box);
+    position:fixed;
+    top:50px;
+    left:0px;
+    display:none;
+    .hideTopL{
+        @include property(30%,100%);
+        background:#ecf2f2;
+        float:left;
+        p{
+          @include property(80%,40px);
+          margin:1px;
+          @include align(40px,left,2rem,black);
+          margin-left:40px;
+        }
+        .bg{
+            background: #4178be;
+        }
+    }
+    .hideTopR{
+        @include property(70%,100%);
+        background:white;
+        float:right;
+        ul {
+            position:relative;
+            left:0;
+            top:0;
+            @include property(100%,100%);
+            li:nth-child(1){
+                @include property(100%,100%);
+            }
+            li:nth-child(2){
+                @include property(100%,100%);
+            }
+            li:nth-child(3){
+                @include property(100%,100%);
+            }
+            li:nth-child(4){
+                @include property(100%,100%);
+            }
+            li:nth-child(5){
+                @include property(100%,100%);
+            }
+            li{
+                position: absolute;
+                top:0;
+                left:0;
+                .liLeft{
+                    float:left;
+                    @include property(40%,100%);
+                    p{
+                        margin:10px 0 0 20px;
+                    }
+                    p:nth-child(1){
+                        font-size:30px;
+                    }
+                }
+                .liRight{
+                    padding-top:50px;
+                    float:right;
+                    @include property(60%,100%);
+                    p{
+                        margin:10px 0 0 20px;
+                    }
+                    .liPic{
+                        @include property(60%,30%);
+                        margin:10px 0 0 20px;
+                        img{
+                            @include property(100%,100%);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+.layout{
+    display: none;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    .hideSide{
+        position:absolute;
+        right:-200px;
+        top:0;
+        height:100%;
+        width: 300px;
+        @include border(1px ,solid, gray ,border-box);
+        overflow-y: auto;
+        background: #fff;
+        >div{
+            @include property(100%,auto);
+            @include align(30px,left,2rem,black);
+            margin:0px 10px 10px 0px;
+            &:first-child{
+                border-bottom: 1px solid gray;
+                box-sizing: border-box;
+              }
+            ul {
+              @include property(90%,auto);
+              li{
+                @include property(auto,30px);
+                @include align(30px,left,1.5rem,black);
+                margin:10px 10px 10px 40px;
+                display:block;
+                &:hover a{
+                  text-decoration: underline;
+                }
+              }
+            }
+            b{
+              padding-left:30px;
+              display:block;
+              @include property(90%,40px);
+              .first{
+                float:right;
+                margin-right:20px;
+                font-size:2rem;
+              }
+              &:hover{
+                background:#008571;
+              }
+              .hideSpan{
+                float:right;
+                color:white;
+                font-size:2rem;
+                @include property(10%,30px);
+              }
+              .hideSpan:last-child{
+                display:none;
+              }
+            }
+        }
+
+
+  }
+}
+@media screen and (max-width:1196px){
+    .top{
+        @include property(100%,50px);
+        overflow:hidden;
+        > div{
+            float: left;
+        }
+        .topSon1{
+            @include property(6.33%,100%);
+            @include align(50px,center ,3rem,black);
+            overflow:hidden;
+            b{
+                padding-bottom:17px;
+                border-bottom:4px solid #4178be;
+            }
+        }
+        .topSon2{
+            @include property(72.8%,100%);
+            overflow:hidden;
+            li{
+                display:none;
+                float:left;
+                @include property(auto,100%);
+                margin:15px 12.5px;
+                border-bottom:4px solid #4178be;
+                padding-bottom:24px;
+                span{
+                  float:right;
+                }
+            }
+            li:last-child{
+                display:block;
+                float:right;
+                @include property(100px,30px);
+                margin: 10px 10px;
+                border: 1px solid #4178be;
+                @include align(30px,center ,1rem,#4178be);
+                padding-bottom:0px;
+            }
+        }
+        .topSon3{
+            @include property(13%,100%);
+            border-left:1px solid gray;
+            border-right:1px solid gray;
+            input{
+                @include property(70%,100%);
+                float:left;
+                border: none;
+                outline:none;
+            }
+            .iconfont{
+                @include property(30%,100%);
+                @include align(50px,center ,2rem,none);
+                float: right;
+            }
+        }
+        .shadow{
+                box-shadow:0 0 4px #4178be;
+            }
+        .topSon4{
+            @include property(7.27%,100%);
+            overflow:hidden;
+            p{
+                @include property(40%,80%);
+                margin: 3px;
+                @include align(50px,center ,2.5rem,none);
+                float:left;
+                border-bottom:4px solid #4178be;
+                padding-bottom:7px;
+            }
+        }
+    }
+    .Banner{
+        @include property(100%,380px);
+        background: url(../image/banner.jpg);
+        background-size:cover;
+        position: relative;
+        overflow:hidden;
+        .banLeft{
+           @include property(40%,80%);
+           float:left;
+           color: white;
+           padding-top: 40px;
+            p:nth-child(1){
+            @include align(45px,left,4rem,none);
+            margin-left: 16px;
+            }
+            p:nth-child(2){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+            }
+            p:nth-child(3){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+                &:hover a{
+                  text-decoration:underline;
+                }
+                span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid black;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    background: #fff;
+                    color:#000;
+                }
+            }
+            p:nth-child(4){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+                &:hover a{
+                  text-decoration:underline;
+                }
+                span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid #000;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    background: #fff;
+                    color:#000;
+                }
+            }
+        }
+        .banRight{
+            @include property(20%,15%);
+            // float:right;
+            position: absolute;
+            bottom:0;
+            right:0;
+            background:rgba(0,0,0,0.3);
+            &>p{
+                float:left;
+                @include property(20%,100%);
+                font-size:2rem;
+                color:rgba(255,255,255,0.5);
+                line-height:60px;
+                text-align:center;
+                // background:rgba(0,0,0,0.5);
+                &:hover{
+                color:rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+    .content1{
+        @include property(100%,408px);
+        .son1:nth-child(even){
+            background: #ecf2f2;
+        }
+        .son1{
+            @include property(50%,100%);
+            float: left;
+            &>p{
+                 @include align(50px,left,3rem,black);
+                 margin:20px;
+            }
+            .sonT1{
+                @include property(100%,43%);
+                img{
+                    @include property(100%,100%);
+                }
+            }
+            .sonB1{
+                @include property(100%,56.8%);
+                font-size:1.5rem;
+                p{
+                    margin:25px 0 0 15px;
+
+                }
+                p:nth-child(2){
+                    font-size:1.2rem;
+                }
+                p:nth-child(3){
+                    color: #4178be;
+                    span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid white;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    color:white;
+                    background: #4178be;
+                    }
+                }
+            }
+        }
+    }
+    .content2{
+        @include property(100%,400px);
+        clear:both;
+        .son2:nth-child(even){
+            background: #1d3649;
+        }
+        .son2:nth-child(odd){
+            background: #264a60;
+        }
+        .son2{
+            @include property(50%,100%);
+            float: left;
+            >p:nth-child(1){
+                @include align(45px,left,2.5rem,white);
+                margin:20px;
+            }
+            >p:nth-child(2){
+                @include property(50%,40px);
+                @include border(1px ,solid, white,border-box);
+                @include align(40px,center,15px,white);
+                margin:20px;
+                &:hover{
+                  background:white;
+                  color: #264a60;
+                }
+            }
+            .sonT2{
+                @include property(100%,40%);
+                img{
+                    @include property(100%,100%);
+                }
+            }
+            .sonB2{
+                @include property(100%,60%);
+                font-size:1.5rem;
+                p{
+                    margin:20px 0 0 15px;
+                    color: white;
+                }
+                p:nth-child(2){
+                    font-size:1.2rem;
+                }
+                p:nth-child(3){
+                  color: white;
+                    span{
+                      float:left;
+                      @include property(15px,15px);
+                      border:1px solid white;
+                      border-radius:7.5px;
+                      margin-right:10px;
+                      color:black;
+                      background: white;
+                    }
+                }
+            }
+        }
+    }
+    .content3{
+        clear:both;
+        @include property(100%,490px);
+        .son3:nth-child(even){
+            background: #ecf2f2;
+        }
+        .son3{
+            @include property(50%,100%);
+            float: left;
+            >p:nth-child(1){
+                @include align(45px,left,3.5rem,#008571);
+                margin:30px 0 0 20px;
+            }
+            >p:nth-child(2){
+                @include property(50%,40px);
+                @include border(1px ,solid, #008571,border-box);
+                @include align(40px,center,1.5rem,#008571);
+                margin:30px 0 0 20px;
+                &:hover{
+                    background:#008571;
+                    color:white;
+                }
+            }
+            >p:nth-child(3){
+                @include property(55%,40px);
+                @include border(1px ,solid, #008571,border-box);
+                @include align(40px,center,1.5rem,#008571);
+                margin:20px;
+                &:hover{
+                    background:#008571;
+                    color:white;
+                }
+            }
+        }
+        .sonT3{
+            @include property(100%,40%);
+            margin-top:30px;
+            img{
+              @include property(100%,100%);
+            }
+        }
+        .sonB3{
+            @include property(100%,59.9%);
+            font-size:2.5rem;
+            p{
+              margin:25px 0 0 15px;
+              color: black;
+            }
+            p:nth-child(2){
+              font-size:1.5rem;
+            }
+            p:nth-child(3){
+              font-size:1rem;
+              color:#4178be;
+              span{
+                float:left;
+                @include property(15px,15px);
+                border:1px solid #fff;
+                border-radius:7.5px;
+                margin-right:10px;
+                background:#4178be;
+                color:white;
+              }
+          }
+
+        }
+    }
+    .content4{
+        @include property(100%,407px);
+        .son4{
+           @include property(50%,100%);
+           background: #4178be;
+           color:white;
+           float:left;
+           >p{
+            @include property(100%,25%);
+            margin: 35px 0 10px 20px;
+            }
+             span{
+                font-size:2.5rem;
+                &:hover a{
+                  text-decoration: underline;
+                }
+            }
+        }
+        .son4:first-child{
+            p{
+              @include property(80%,50%);
+              @include align(45px,center,3rem,white);
+              margin:80px 0 0 20px;
+            }
+        }
+    }
+    .content5{
+        @include property(100%,485px);
+        background: url(../image/story.jpg);
+        background-size:cover;
+        clear:both;
+        .son5{
+            @include property(40%,80%);
+            padding-top:50px;
+            p:nth-child(1){
+              margin: 20px;
+              @include align(30px,left,18px,white);
+            }
+            p:nth-child(2){
+              margin: 20px;
+              @include align(40px,left,28px,white);
+            }
+            p:nth-child(3){
+              margin: 20px;
+              @include align(30px,left,15px,white);
+          }
+            p:nth-child(4){
+              margin: 20px;
+              @include property(150px,40px);
+              background:#777677;
+              @include align(40px,center,2rem,white);
+              &:hover{
+                  background:#000;
+              }
+            }
+        }
+    }
+    .content6{
+        @include property(100%,342px);
+        .son6{
+            @include property(50%,100%);
+            background: #777677;
+            float:left;
+            color:white;
+            span{
+              font-size:2.5rem;
+              &:hover a{
+                text-decoration:underline;
+              }
+            }
+        }
+        .son6>p{
+            @include property(100%,40%);
+            margin-top: 40px;
+            font-size:1.5rem;
+        }
+        .son6:first-child{
+            p{
+              @include property(80%,40%);
+              @include align(45px,center,4rem,white);
+              margin:80px 0 0 20px;
+            }
+       }
+    }
+    .content7{
+        @include property(100%,440px);
+        .son7{
+            @include property(25%,100%);
+            float:left;
+            p{
+                margin:30px 0 0 20px;
+                &:hover a{
+                  text-decoration: underline;
+                  color:blue;
+                }
+            }
+            select{
+                margin:30px 0 0 20px;
+            }
+        }
+    }
+    .footer{
+        @include property(100%,50px);
+        border-top:1px solid gray;
+        font-size:2rem;
+        line-height:50px;
+        text-align:left;
+        position:relative;
+        overflow:hidden;
+        >p{
+          float:left;
+          margin-left: 30px;
+        }
+        .footRight{
+            @include property(20%,50%);
+            position: absolute;
+            bottom:0;
+            right:0;
+            background:rgba(0,0,0,0.3);
+            >p{
+                @include property(20%,100%);
+                float:left;
+                font-size:2rem;
+                color:rgba(255,255,255,0.5);
+                line-height:30px;
+                text-align:center;
+                &:hover{
+                color:rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+    .hideTop{
+        @include property(100%,500px);
+        @include border(1px ,solid, gray ,border-box);
+        position:fixed;
+        top:50px;
+        left:0px;
+        display:none;
+        .hideTopL{
+            @include property(30%,100%);
+            background:#ecf2f2;
+            float:left;
+            p{
+              @include property(80%,40px);
+              margin:1px;
+              @include align(40px,left,2rem,black);
+              margin-left:40px;
+            }
+            .bg{
+                background: #4178be;
+            }
+        }
+        .hideTopR{
+            @include property(70%,100%);
+            background:white;
+            float:right;
+            ul {
+                position:relative;
+                left:0;
+                top:0;
+                @include property(100%,100%);
+                li:nth-child(1){
+                    @include property(100%,100%);
+                }
+                li:nth-child(2){
+                    @include property(100%,100%);
+                }
+                li:nth-child(3){
+                    @include property(100%,100%);
+                }
+                li:nth-child(4){
+                    @include property(100%,100%);
+                }
+                li:nth-child(5){
+                    @include property(100%,100%);
+                }
+                li{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    .liLeft{
+                        float:left;
+                        @include property(40%,100%);
+                        p{
+                            margin:10px 0 0 20px;
+                        }
+                        p:nth-child(1){
+                            font-size:30px;
+                        }
+                    }
+                    .liRight{
+                        padding-top:50px;
+                        float:right;
+                        @include property(60%,100%);
+                        p{
+                            margin:10px 0 0 20px;
+                        }
+                        .liPic{
+                            @include property(60%,30%);
+                            margin:10px 0 0 20px;
+                            img{
+                                @include property(100%,100%);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .layout{
+        display: none;
+        position:fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+        .hideSide{
+            position:absolute;
+            right:-200px;
+            top:0;
+            height:100%;
+            width: 300px;
+            @include border(1px ,solid, gray ,border-box);
+            overflow-y: auto;
+            background: #fff;
+            >div{
+                @include property(100%,auto);
+                @include align(30px,left,2rem,black);
+                margin:0px 10px 10px 0px;
+                &:first-child{
+                    border-bottom: 1px solid gray;
+                    box-sizing: border-box;
+                  }
+                ul {
+                  @include property(90%,auto);
+                  li{
+                    @include property(auto,30px);
+                    @include align(30px,left,1.5rem,black);
+                    margin:10px 10px 10px 40px;
+                    display:block;
+                    &:hover a{
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                b{
+                  padding-left:30px;
+                  display:block;
+                  @include property(90%,40px);
+                  .first{
+                    float:right;
+                    margin-right:20px;
+                    font-size:2rem;
+                  }
+                  &:hover{
+                    background:#008571;
+                  }
+                  .hideSpan{
+                    float:right;
+                    color:white;
+                    font-size:2rem;
+                    @include property(10%,30px);
+                  }
+                  .hideSpan:last-child{
+                    display:none;
+                  }
+                }
+            }
+
+
+      }
+    }
+}
+@media screen and (max-width:580px){
+    .top{
+        @include property(100%,50px);
+        > div{
+            float: left;
+        }
+        .topSon1{
+            @include property(12%,100%);
+            @include align(50px,center ,3rem,black);
+            overflow:hidden;
+            b{
+                padding-bottom:17px;
+                border-bottom:4px solid #4178be;
+            }
+        }
+        .topSon2{
+            @include property(60%,100%);
+            li{
+                display:none;
+                float:left;
+                @include property(auto,100%);
+                margin:0px 12.5px;
+                border-bottom:4px solid #4178be;
+                padding-bottom:24px;
+                span{
+                  float:right;
+                }
+            }
+            li:last-child{
+                display:block;
+                float:right;
+                @include property(100px,30px);
+                margin: 10px 10px;
+                border: 1px solid #4178be;
+                @include align(30px,center ,1rem,#4178be);
+                padding-bottom:0px;
+            }
+        }
+        .topSon3{
+            @include property(13%,100%);
+            border-left:1px solid gray;
+            border-right:1px solid gray;
+            input{
+                @include property(70%,100%);
+                float:left;
+                border: none;
+                outline:none;
+            }
+            .iconfont{
+                @include property(30%,100%);
+                @include align(50px,center ,2rem,none);
+                float: right;
+            }
+        }
+        .shadow{
+                box-shadow:0 0 4px #4178be;
+            }
+        .topSon4{
+            @include property(14%,100%);
+            p{
+                @include property(40%,80%);
+                margin: 1px;
+                @include align(50px,center ,2.5rem,none);
+                float:left;
+                border-bottom:4px solid #4178be;
+                padding-bottom:7px;
+            }
+        }
+    }
+    .Banner{
+        @include property(100%,380px);
+        background: url(../image/banner.jpg);
+        background-size:cover;
+        position: relative;
+        clear:both;
+        .banLeft{
+           @include property(100%,80%);
+           color: white;
+           padding-top: 40px;
+            p:nth-child(1){
+            @include align(45px,left,4rem,none);
+            margin-left: 16px;
+            }
+            p:nth-child(2){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+            }
+            p:nth-child(3){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+                &:hover a{
+                  text-decoration:underline;
+                }
+                span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid black;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    background: #fff;
+                    color:#000;
+                }
+            }
+            p:nth-child(4){
+                @include align(15px,left,1.3rem,none);
+                margin-left: 16px;
+                margin-top:20px;
+                &:hover a{
+                  text-decoration:underline;
+                }
+                span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid #000;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    background: #fff;
+                    color:#000;
+                }
+            }
+        }
+        .banRight{
+            @include property(100%,15%);
+            // float:right;
+            &>p{
+                float:left;
+                @include property(20%,100%);
+                font-size:2rem;
+                color:rgba(255,255,255,0.5);
+                line-height:60px;
+                text-align:center;
+                // background:rgba(0,0,0,0.5);
+                &:hover{
+                color:rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+    .content1{
+        @include property(100%,408px);
+        .son1:nth-child(even){
+            background: #ecf2f2;
+        }
+        .son1{
+            @include property(100%,100%);
+            float: left;
+            &>p{
+                 @include align(50px,left,3rem,black);
+                 margin:20px;
+            }
+            .sonT1{
+                @include property(100%,43%);
+                img{
+                    @include property(100%,100%);
+                }
+            }
+            .sonB1{
+                @include property(100%,56.8%);
+                font-size:1.5rem;
+                p{
+                    margin:25px 0 0 15px;
+
+                }
+                p:nth-child(2){
+                    font-size:1.2rem;
+                }
+                p:nth-child(3){
+                    color: #4178be;
+                    span{
+                    float:left;
+                    @include property(15px,15px);
+                    border:1px solid white;
+                    border-radius:7.5px;
+                    margin-right:10px;
+                    color:white;
+                    background: #4178be;
+                    }
+                }
+            }
+        }
+    }
+    .content2{
+        @include property(100%,400px);
+        clear:both;
+        .son2:nth-child(even){
+            background: #1d3649;
+        }
+        .son2:nth-child(odd){
+            background: #264a60;
+        }
+        .son2{
+            @include property(100%,100%);
+            float: left;
+            >p:nth-child(1){
+                @include align(45px,left,2.5rem,white);
+                margin:20px;
+            }
+            >p:nth-child(2){
+                @include property(50%,40px);
+                @include border(1px ,solid, white,border-box);
+                @include align(40px,center,15px,white);
+                margin:20px;
+                &:hover{
+                  background:white;
+                  color: #264a60;
+                }
+            }
+            .sonT2{
+                @include property(100%,40%);
+                img{
+                    @include property(100%,100%);
+                }
+            }
+            .sonB2{
+                @include property(100%,60%);
+                font-size:1.5rem;
+                p{
+                    margin:20px 0 0 15px;
+                    color: white;
+                }
+                p:nth-child(2){
+                    font-size:1.2rem;
+                }
+                p:nth-child(3){
+                  color: white;
+                    span{
+                      float:left;
+                      @include property(15px,15px);
+                      border:1px solid white;
+                      border-radius:7.5px;
+                      margin-right:10px;
+                      color:black;
+                      background: white;
+                    }
+                }
+            }
+        }
+    }
+    .content3{
+        clear:both;
+        @include property(100%,490px);
+        .son3:nth-child(even){
+            background: #ecf2f2;
+        }
+        .son3{
+            @include property(100%,100%);
+            float: left;
+            >p:nth-child(1){
+                @include align(45px,left,3.5rem,#008571);
+                margin:30px 0 0 20px;
+            }
+            >p:nth-child(2){
+                @include property(50%,40px);
+                @include border(1px ,solid, #008571,border-box);
+                @include align(40px,center,1.5rem,#008571);
+                margin:30px 0 0 20px;
+                &:hover{
+                    background:#008571;
+                    color:white;
+                }
+            }
+            >p:nth-child(3){
+                @include property(55%,40px);
+                @include border(1px ,solid, #008571,border-box);
+                @include align(40px,center,1.5rem,#008571);
+                margin:20px;
+                &:hover{
+                    background:#008571;
+                    color:white;
+                }
+            }
+        }
+        .sonT3{
+            @include property(100%,40%);
+            margin-top:30px;
+            img{
+              @include property(100%,100%);
+            }
+        }
+        .sonB3{
+            @include property(100%,59.9%);
+            font-size:2.5rem;
+            p{
+              margin:25px 0 0 15px;
+              color: black;
+            }
+            p:nth-child(2){
+              font-size:1.5rem;
+            }
+            p:nth-child(3){
+              font-size:1rem;
+              color:#4178be;
+              span{
+                float:left;
+                @include property(15px,15px);
+                border:1px solid #fff;
+                border-radius:7.5px;
+                margin-right:10px;
+                background:#4178be;
+                color:white;
+              }
+          }
+
+        }
+    }
+    .content4{
+        @include property(100%,407px);
+        .son4{
+           @include property(100%,100%);
+           background: #4178be;
+           color:white;
+           float:left;
+           >p{
+            @include property(100%,25%);
+            margin: 35px 0 10px 20px;
+            }
+             span{
+                font-size:2.5rem;
+                &:hover a{
+                  text-decoration: underline;
+                }
+            }
+        }
+        .son4:first-child{
+            p{
+              @include property(80%,50%);
+              @include align(45px,center,3rem,white);
+              margin:80px 0 0 20px;
+            }
+        }
+    }
+    .content5{
+        @include property(100%,485px);
+        background: url(../image/story.jpg);
+        background-size:cover;
+        clear:both;
+        .son5{
+            @include property(100%,80%);
+            padding-top:50px;
+            p:nth-child(1){
+              margin: 20px;
+              @include align(30px,left,18px,white);
+            }
+            p:nth-child(2){
+              margin: 20px;
+              @include align(40px,left,28px,white);
+            }
+            p:nth-child(3){
+              margin: 20px;
+              @include align(30px,left,15px,white);
+          }
+            p:nth-child(4){
+              margin: 20px;
+              @include property(150px,40px);
+              background:#777677;
+              @include align(40px,center,2rem,white);
+              &:hover{
+                  background:#000;
+              }
+            }
+        }
+    }
+    .content6{
+        @include property(100%,342px);
+        .son6{
+            @include property(100%,100%);
+            background: #777677;
+            float:left;
+            color:white;
+            span{
+              font-size:2.5rem;
+              &:hover a{
+                text-decoration:underline;
+              }
+            }
+        }
+        .son6>p{
+            @include property(100%,40%);
+            margin-top: 40px;
+            font-size:1.5rem;
+        }
+        .son6:first-child{
+            p{
+              @include property(80%,40%);
+              @include align(45px,center,4rem,white);
+              margin:80px 0 0 20px;
+            }
+       }
+    }
+    .content7{
+        @include property(100%,auto);
+        .son7{
+            @include property(100%,100%);
+            float:left;
+            p{
+                margin:30px 0 0 20px;
+                &:hover a{
+                  text-decoration: underline;
+                  color:blue;
+                }
+            }
+            select{
+                margin:30px 0 0 20px;
+            }
+        }
+    }
+    .footer{
+        @include property(100%,100px);
+        border-top:1px solid gray;
+        font-size:1rem;
+        line-height:50px;
+        text-align:left;
+        position:relative;
+        overflow:hidden;
+        >p{
+
+          float:left;
+          margin-left: 30px;
+        }
+        .footRight{
+            @include property(100%,50px);
+            background:rgba(0,0,0,0.3);
+            >p{
+                @include property(20%,100%);
+                float:left;
+                font-size:2rem;
+                color:rgba(255,255,255,0.5);
+                line-height:30px;
+                text-align:center;
+                &:hover{
+                color:rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+    .hideTop{
+        @include property(100%,500px);
+        @include border(1px ,solid, gray ,border-box);
+        position:fixed;
+        top:50px;
+        left:0px;
+        display:none;
+        .hideTopL{
+            @include property(30%,100%);
+            background:#ecf2f2;
+            float:left;
+            p{
+              @include property(80%,40px);
+              margin:1px;
+              @include align(40px,left,2rem,black);
+              margin-left:40px;
+            }
+            .bg{
+                background: #4178be;
+            }
+        }
+        .hideTopR{
+            @include property(70%,100%);
+            background:white;
+            float:right;
+            ul {
+                position:relative;
+                left:0;
+                top:0;
+                @include property(100%,100%);
+                li:nth-child(1){
+                    @include property(100%,100%);
+                }
+                li:nth-child(2){
+                    @include property(100%,100%);
+                }
+                li:nth-child(3){
+                    @include property(100%,100%);
+                }
+                li:nth-child(4){
+                    @include property(100%,100%);
+                }
+                li:nth-child(5){
+                    @include property(100%,100%);
+                }
+                li{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    .liLeft{
+                        float:left;
+                        @include property(40%,100%);
+                        p{
+                            margin:10px 0 0 20px;
+                        }
+                        p:nth-child(1){
+                            font-size:30px;
+                        }
+                    }
+                    .liRight{
+                        padding-top:50px;
+                        float:right;
+                        @include property(60%,100%);
+                        p{
+                            margin:10px 0 0 20px;
+                        }
+                        .liPic{
+                            @include property(60%,30%);
+                            margin:10px 0 0 20px;
+                            img{
+                                @include property(100%,100%);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .layout{
+        display: none;
+        position:fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+        .hideSide{
+            position:absolute;
+            right:-200px;
+            top:0;
+            height:100%;
+            width: 300px;
+            @include border(1px ,solid, gray ,border-box);
+            overflow-y: auto;
+            background: #fff;
+            >div{
+                @include property(100%,auto);
+                @include align(30px,left,2rem,black);
+                margin:0px 10px 10px 0px;
+                &:first-child{
+                    border-bottom: 1px solid gray;
+                    box-sizing: border-box;
+                  }
+                ul {
+                  @include property(90%,auto);
+                  li{
+                    @include property(auto,30px);
+                    @include align(30px,left,1.5rem,black);
+                    margin:10px 10px 10px 40px;
+                    display:block;
+                    &:hover a{
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                b{
+                  padding-left:30px;
+                  display:block;
+                  @include property(90%,40px);
+                  .first{
+                    float:right;
+                    margin-right:20px;
+                    font-size:2rem;
+                  }
+                  &:hover{
+                    background:#008571;
+                  }
+                  .hideSpan{
+                    float:right;
+                    color:white;
+                    font-size:2rem;
+                    @include property(10%,30px);
+                  }
+                  .hideSpan:last-child{
+                    display:none;
+                  }
+                }
+            }
+
+
+      }
+    }
+
+}
